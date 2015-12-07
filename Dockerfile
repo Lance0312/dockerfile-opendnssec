@@ -5,3 +5,5 @@ RUN apt-get update \
     opendnssec \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
+
+ENTRYPOINT ["/usr/sbin/ods-control"]
